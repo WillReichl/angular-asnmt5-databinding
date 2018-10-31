@@ -7,12 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameControlComponent implements OnInit {
 
-  constructor() { }
+  gameNumber: number;
+
+  constructor() {
+    this.gameNumber = 0;
+  }
 
   ngOnInit() {
   }
 
   startGame() {
+    setInterval(function() { console.log('Game running!'); }, 1000);
     console.log('Game started!');
   }
 
