@@ -20,4 +20,18 @@
       <app-game-control (numberEmitted)="onNumberChanged($event)"></app-game-control>
     </div>
   </div>
+  <div class="row">
+    <div class="col-xs-6">
+      <h3>Odd Numbers</h3>
+      <ul>
+        <app-odd *ngFor="let oddNumber of oddNumbers"></app-odd>
+      </ul>
+    </div>
+    <div class="col-xs-6">
+      <h3>Even Numbers</h3>
+      <ul>
+        <app-even *ngFor="let evenNumber of evenNumbers"></app-even>
+      </ul>
+    </div>
+  </div>
 </div>
